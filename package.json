@@ -1,0 +1,23 @@
+{
+  "name": "gdscwebsite",
+  "version": "1.0.0",
+  "description": "GDSC UIT RGPV Website in NOdejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Harsh Vishwakarma",
+  "license": "ISC",
+  "dependencies": {
+    "consolidate": "^0.16.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-blocks": "^0.2.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-handlebars": "^6.0.2",
+    "hbs": "^4.2.0",
+    "nodemon": "^2.0.15",
+    "pug": "^3.0.2",
+    "swig": "^1.4.2"
+  }
+}
