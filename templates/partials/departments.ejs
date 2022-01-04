@@ -8,68 +8,23 @@
         </div>
 
         <div class="row">
-            <div class="col-md-4">
-                <div class="services-item">
-                    <div class="corner corner-top"></div>
-                    <div class="corner corner-bottom"></div>
-                    <div class="icon">
-                        <img src="assets/img/services/1.png" alt="">
+            <% for(var i = 0; i < departments.length; i++) {%>
+             
+                <div class="col-md-4">
+                    <div class="services-item">
+                        <div class="corner corner-top"></div>
+                        <div class="corner corner-bottom"></div>
+                        <div class="icon">
+                            <img src="assets/img/services/<%= departments[i].icon %>" alt="">
+                        </div>
+                        <div class="services-header">
+                            <h3><%= departments[i].name %></h3>
+                        </div>
+                        <p><%= departments[i].description %></p>
                     </div>
-                    <div class="services-header">
-                        <h3>DIGITAL PRODUCTS</h3>
-                    </div>
-                    <p>Web design encompasses many different skills and disciplines in the production of
-                        all
-                        web.</p>
                 </div>
-            </div>
+             <% } %>
 
-            <div class="col-md-4">
-                <div class="services-item selected">
-                    <div class="corner corner-top"></div>
-                    <div class="corner corner-bottom"></div>
-                    <div class="icon">
-                        <img src="assets/img/services/2.png" alt="">
-                    </div>
-                    <div class="services-header">
-                        <h3>UI-UX DESIGN</h3>
-                    </div>
-                    <p>Web design encompasses many different skills and disciplines in the production of
-                        all
-                        web.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="services-item">
-                    <div class="corner corner-top"></div>
-                    <div class="corner corner-bottom"></div>
-                    <div class="icon">
-                        <img src="assets/img/services/3.png" alt="">
-                    </div>
-                    <div class="services-header">
-                        <h3>WEB DEVELOPMENT</h3>
-                    </div>
-                    <p>Web design encompasses many different skills and disciplines in the production of
-                        all
-                        web.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="services-item">
-                    <div class="corner corner-top"></div>
-                    <div class="corner corner-bottom"></div>
-                    <div class="icon">
-                        <img src="assets/img/services/3.png" alt="">
-                    </div>
-                    <div class="services-header">
-                        <h3>WEB DEVELOPMENT</h3>
-                    </div>
-                    <p>Web design encompasses many different skills and disciplines in the production of
-                        all
-                        web.</p>
-                </div>
-            </div>
         </div>
     </div>
 </section>

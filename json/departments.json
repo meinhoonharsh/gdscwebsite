@@ -1,55 +1,55 @@
 [
     {
         "name":"Web Dev",
-        "icon":"cat1.png",
+        "icon":"1.png",
         "description":"This department brings you up to speed on modern front-end, back-end, and full-stack web development practices and skills.",
         "bg":"e3f2fd"
     },
     {
         "name":"App Dev",
-        "icon":"cat2.png",
+        "icon":"2.png",
         "description":"Have tons of ideas for an app? It’s time to make your ideas into reality. Come learn to design your app with us!",
         "bg":"ffebee"
     },
     {
         "name":"Women in Tech",
-        "icon":"cat3.png",
+        "icon":"3.png",
         "description":"As women with the capacity to inspire and lead, we focus on the growth and success of entrepreneurial and innovative women in the technology space.",
         "bg":"fff8e1"
     },
     {
         "name":"Blockchain",
-        "icon":"cat1.png",
+        "icon":"1.png",
         "description":"Innovate with the Next Frontier in Technology. Learn how the blockchain is leading to a paradigm shift in decentralized application programming.",
         "bg":"e3f2fd"
     },
     {
         "name":"ML/Cloud",
-        "icon":"cat2.png",
+        "icon":"2.png",
         "description":"Whether you’re interested in using the cloud, or want to set up a cloud computing network using Google or Amazon Web Services.",
         "bg":"ffebee"
     },
     {
         "name":"CyberSecurity",
-        "icon":"cat3.png",
+        "icon":"3.png",
         "description":"Whether you’re interested in using the cloud, or want to set up a cloud computing network using Google or Amazon Web Services.",
         "bg":"fff8e1"
     },
     {
         "name":"Marketing",
-        "icon":"cat1.png",
+        "icon":"1.png",
         "description":"Marketing feels overwhelming and we try to tailor your campaigns to your audience in authentic and effective ways.        ",
         "bg":"e3f2fd"
     },
     {
         "name":"UI/UX",
-        "icon":"cat2.png",
+        "icon":"2.png",
         "description":"Design High-Impact User Experiences. Research, design, and prototype effective, visually-driven websites and apps.",
         "bg":"ffebee"
     },
     {
         "name":"Designing",
-        "icon":"cat3.png",
+        "icon":"3.png",
         "description":"To learn a new design, software or start your own design business.",
         "bg":"fff8e1"
     }
