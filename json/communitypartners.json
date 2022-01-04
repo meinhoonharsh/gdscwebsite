@@ -1,0 +1,45 @@
+[
+    {
+        "name":"Finflee",
+        "logo":"finflee",
+        "url":"https://finflee.co/",
+        "description":""
+    },
+    {
+        "name":"Heiphen",
+        "logo":"heiphen",
+        "url":"https://heiphen.com/",
+        "description":""
+    },
+    {
+        "name":"Quine Scout",
+        "logo":"quinescout",
+        "url":"https://scout.quine.sh/",
+        "description":""
+    },
+    {
+        "name":"StartUp IO",
+        "logo":"startupoi",
+        "url":"https://startupoi.com/",
+        "description":""
+    },
+    {
+        "name":"Freaky Diodes",
+        "logo":"freakydiodes",
+        "url":"https://freaky-diodes.com/",
+        "description":""    
+    },
+    {
+        "name":"MLSA",
+        "logo":"mlsa",
+        "url":"https://studentambassadors.microsoft.com/",
+        "description":""
+    },
+    {
+        "name":"SemiKolan",
+        "logo":"semikolan",
+        "url":"https://semikolan.co/",
+        "description":""
+    }
+
+]
