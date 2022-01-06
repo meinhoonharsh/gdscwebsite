@@ -624,11 +624,23 @@ function initMap() {
         cssEase: "linear",
       }),
       e(
-        ' .our-news .slick-slider , .our-team .slick-slider , [data-dsn-col="2"] .slick-slider'
+        '.our-team .slick-slider , [data-dsn-col="2"] .slick-slider'
       ).slick({
         infinite: !0,
         slidesToShow: 4,
         slidesToScroll: 4,
+        arrows: !1,
+        dots: !0,
+        responsive: [
+          { breakpoint: 800, settings: { slidesToShow: 2, slidesToScroll: 2 } },
+        ],
+      }),
+      e(
+        ' .our-news .slick-slider, [data-dsn-col="2"] .slick-slider'
+      ).slick({
+        infinite: !0,
+        slidesToShow: 2,
+        slidesToScroll: 2,
         arrows: !1,
         dots: !0,
         responsive: [
