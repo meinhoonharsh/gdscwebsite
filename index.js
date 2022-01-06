@@ -19,6 +19,14 @@ router.get("/", (req, res) => {
   });
 });
 
+router.get("/contact", (req, res) => {
+  res.render("contact",{
+    departments: departments,
+    partners: partners,
+    teams: teams
+  });
+});
+
 router.get("/about", (req, res) => {
   res.render("about", { title: "Hey", message: "Hello there!" });
 });
