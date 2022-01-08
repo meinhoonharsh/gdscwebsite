@@ -7,7 +7,7 @@
     },
     {
         "name":"App Dev",
-        "icon":"2-light.png",
+        "icon":"2.png",
         "description":"Have tons of ideas for an app? It’s time to make your ideas into reality. Come learn to design your app with us!",
         "bg":"ffebee"
     },
@@ -19,7 +19,7 @@
     },
     {
         "name":"Blockchain",
-        "icon":"1-light.png",
+        "icon":"1.png",
         "description":"Innovate with the Next Frontier in Technology. Learn how the blockchain is leading to a paradigm shift in decentralized application programming.",
         "bg":"e3f2fd"
     },
@@ -31,7 +31,7 @@
     },
     {
         "name":"CyberSecurity",
-        "icon":"3-light.png",
+        "icon":"3.png",
         "description":"Whether you’re interested in using the cloud, or want to set up a cloud computing network using Google or Amazon Web Services.",
         "bg":"fff8e1"
     },
@@ -43,7 +43,7 @@
     },
     {
         "name":"UI/UX",
-        "icon":"2-light.png",
+        "icon":"2.png",
         "description":"Design High-Impact User Experiences. Research, design, and prototype effective, visually-driven websites and apps.",
         "bg":"ffebee"
     },

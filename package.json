@@ -11,6 +11,7 @@
   "author": "Harsh Vishwakarma",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.24.0",
     "consolidate": "^0.16.0",
     "ejs": "^3.1.6",
     "express": "^4.17.2",
@@ -18,6 +19,7 @@
     "express-ejs-layouts": "^2.5.1",
     "express-handlebars": "^6.0.2",
     "hbs": "^4.2.0",
+    "node-fetch": "^3.1.0",
     "nodemon": "^2.0.15",
     "pug": "^3.0.2",
     "swig": "^1.4.2"

@@ -1,0 +1,40 @@
+/* Google Colors as Variables */
+:root{
+    --google-red : #ea4335;
+    --google-blue : #4285fa;
+    --google-yellow : #fbbc05;
+    --google-green : #34a853;
+}
+
+.our-services-2 .row > *:nth-child(2) .services-item {
+    background-color: var(--google-blue) !important;
+    color:white;
+}
+.our-services-2 .row > *:nth-child(4) .services-item {
+    background-color: var(--google-red) !important;
+    color:white;
+}
+.our-services-2 .row > *:nth-child(6) .services-item {
+    background-color: var(--google-yellow) !important;
+    color:white;
+}
+.our-services-2 .row > *:nth-child(8) .services-item {
+    background-color: var(--google-green) !important;
+    color:white;
+}
+.our-services-2 .row > *:nth-of-type(2n+2) .services-item h3{
+    color:white !important;
+}
+/* Select nth word of h1 */
+.g-color span:nth-child(1) {
+    color:var(--google-blue) !important;
+}
+.g-color span:nth-child(2) {
+    color:var(--google-red) !important;
+}
+.g-color span:nth-child(3) {
+    color:var(--google-yellow) !important;
+}
+.g-color span:nth-child(4) {
+    color:var(--google-green) !important;
+}
