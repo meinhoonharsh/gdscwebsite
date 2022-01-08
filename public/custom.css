@@ -38,3 +38,12 @@
 .g-color span:nth-child(4) {
     color:var(--google-green) !important;
 }
+
+
+
+/* LAnding */
+.landing-img{
+    position:absolute;
+    top:0;
+    right:5%;
+}
