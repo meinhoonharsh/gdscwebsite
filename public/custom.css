@@ -47,3 +47,9 @@
     top:0;
     right:5%;
 }
+
+@media only screen and (max-width: 767px) {
+    .landing-img{
+        display:none;
+    }
+  }
