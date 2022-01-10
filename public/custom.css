@@ -39,6 +39,9 @@
     color:var(--google-green) !important;
 }
 
+.g-shrink span{
+    margin:0 -5px;
+}
 
 
 /* LAnding */
@@ -52,4 +55,15 @@
     .landing-img{
         display:none;
     }
+  }
+
+
+
+  /* Logo */
+  .logo img{
+      transform:scale(0.7);
+  }
+
+  .header-hero-2{
+      background: #fff !important;
   }
