@@ -11,56 +11,28 @@
             <div class="items">
                 <div class="bg"></div>
                 <div class="slick-slider">
-                    <div class="item">
-                        <div class="quote">
-                            <p>"The Brief team has been sincerely committed to
-                                designing great communication around our projects. Our customers love
-                                their
-                                creative work - and so do we!"</p>
-                        </div>
-                        <div class="bottom">
-                            <div class="avatar">
-                                <img src="assets/img/avatar/1.jpg" alt="">
-                            </div>
-                            <div class="label">
-                                <div class="cell">- Helen Ginsberg, CEO of Treasure Island</div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="item">
-                        <div class="quote">
-                            <p>"Stage direction, music, ballet, workshops, backstage, the GTG presents
-                                the
-                                first
-                                episode of the series “Les Indes galantes en création"</p>
-                        </div>
-                        <div class="bottom">
-                            <div class="avatar">
-                                <img src="assets/img/avatar/2.jpg" alt="">
+                    
+                    <% for(var i = 0; i < feedbacks.length; i++) {%>
+                        <div class="item">
+                            <div class="quote">
+                                <p>
+                                    <%= feedbacks[i].attributes.feedback %>
+                                </p>
                             </div>
-                            <div class="label">
-                                <div class="cell">- Helen Ginsberg, CEO of Treasure Island</div>
+                            <div class="bottom">
+                                <div class="avatar">
+                                    <img src="<%= apiUrl + feedbacks[i].attributes.Avatar.data.attributes.url %>" alt="">
+                                </div>
+                                <div class="label">
+                                    <div class="cell">- <%= feedbacks[i].attributes.Name %>, <%= feedbacks[i].attributes.Position %></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    <% } %>
 
-                    <div class="item">
-                        <div class="quote">
-                            <p>"The Brief team has been sincerely committed to
-                                designing great communication around our projects. Our customers love
-                                their
-                                creative work - and so do we!"</p>
-                        </div>
-                        <div class="bottom">
-                            <div class="avatar">
-                                <img src="assets/img/avatar/3.jpg" alt="">
-                            </div>
-                            <div class="label">
-                                <div class="cell">- Helen Ginsberg, CEO of Treasure Island</div>
-                            </div>
-                        </div>
-                    </div>
+
+
                 </div>
             </div>
         </div>
