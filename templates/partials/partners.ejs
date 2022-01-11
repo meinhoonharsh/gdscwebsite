@@ -14,7 +14,7 @@
 
                         <% for(var i = 0; i < partners.length; i++) {%>
                             <div class="logo-box">
-                                <img src="assets/img/logo/1-light.png" alt="">
+                                <img src="<%= apiUrl + partners[i].attributes.Logo.data.attributes.url %>" alt="">
     
                                 <div class="info">
                                     <div class="content" onclick="javascript:void(0);">
