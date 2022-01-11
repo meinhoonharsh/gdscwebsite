@@ -7,7 +7,7 @@ const teams = require('./json/teams.json');
 const axios = require('axios')
 const { resolve } = require("path");
 const { param } = require("express/lib/request");
-const apiUrl = 'http://localhost:1337/'
+const apiUrl = 'http://localhost:1337'
 const router = express.Router();
 app.set('views', path.join(__dirname, 'templates'));
 app.set('view engine', 'ejs');
@@ -15,10 +15,10 @@ app.set('view engine', 'ejs');
  
 getData = async (path) => {
     try {
-        const response = await axios.get(apiUrl + path).then(res => res.data);
+        const response = await axios.get(apiUrl +'/api/'+ path).then(res => res.data);
         return response.data;
     } catch (error) {
-        console.log(error);
+        console.log(error.data);
     } 
   }
 
@@ -26,18 +26,25 @@ getData = async (path) => {
 app.use(express.static(path.join(__dirname, 'public')));
 router.get("/", async (req, res) => {
   
-  // const teamsData = await axios.get(`${apiUrl}api/teams`).then(response => response.data.data )
-  // const departmentsData = await axios.get(`${apiUrl}api/departments`).then(response => response.data.data)
-  const teamsData = await getData(`api/teams`)
-  const departmentsData = await getData(`api/departments`)
-  const partnersData = await getData(`api/communitypartners`)
+  const teamsData = await getData(`teams`)
+  const departmentsData = await getData(`departments?populate=icon`)
+  const partnersData = await getData(`communitypartners`)
+  const blogsData = await getData(`blogs`)
+  const eventsData = await getData(`events`)
+  const feedbackData = await getData(`feedbacks`)
+  
  
   const params = {
     departments: departmentsData,
     partners: partnersData,
-    teams: teamsData
+    teams: teamsData,
+    blogs: blogsData,
+    events: eventsData,
+    feedbacks: feedbackData,
+    apiUrl: apiUrl
   }
-  res.render("index", params);
+  res.send(params)
+  // res.render("index", params);
  
 
 
