@@ -20,7 +20,7 @@
                                     <% for(var i = 0; i < teams.length; i++) {%>
                                         <div class="team-item slick-slide">
                                             <div class="box-img">
-                                                <img src="assets/img/team/1.png" alt="">
+                                                <img src="<%= apiUrl + teams[i].attributes.image.data.attributes.url %>" alt="">
                                             </div>
     
                                             <div class="box-content">
@@ -36,4 +36,6 @@
                                 </div>
                             </div>
                         </div>
+
+                    
                     </section>

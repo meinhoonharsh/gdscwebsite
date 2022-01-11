@@ -1,84 +1,52 @@
+<section class="our-work work-under-header  section-margin" data-dsn-col="3">
+    <div class="container">
+        <div class="one-title">
+            <div class="title-sub-container">
+                <p class="title-sub">What we've done</p>
+            </div>
+            <h2 class="title-main">Our
+                <span class="g-color g-shrink">
+                    <span>PR</span>
+                    <span>EV</span>
+                    <span>IO</span>
+                    <span>US</span>
+                </span>
+                Events
+            </h2>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9 offset-lg-3">
+                <div class="work-container">
+                    <div class="slick-slider">
 
-            <section class="our-work work-under-header  section-margin" data-dsn-col="3">
-                <div class="container">
-                    <div class="one-title">
-                        <div class="title-sub-container">
-                            <p class="title-sub">What we've done</p>
-                        </div>
-                        <h2 class="title-main">Our 
-                            <span class="g-color g-shrink">
-                                <span>PR</span>
-                                <span>EV</span>
-                                <span>IO</span>
-                                <span>US</span>
-                            </span>
-                            Events</h2>
-                    </div>
-                </div>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-9 offset-lg-3">
-                            <div class="work-container">
-                                <div class="slick-slider">
-                                    <div class="work-item slick-slide">
-                                        <img class="has-top-bottom" src="assets/img/project/project3/1.jpg" alt="">
-                                        <div class="item-border"></div>
-                                        <div class="item-info">
-                                            <a href="project-7.html" data-dsn-grid="move-up" class="effect-ajax">
 
-                                                <h5 class="cat">Photography</h5>
-                                                <h4>Nile - Kabutha</h4>
-                                                <span><span>Veiw Project</span></span>
-                                            </a>
+                        <% for(var i=0; i < events.length; i++) {%>
 
-                                        </div>
-                                    </div>
+                            <div class="work-item slick-slide">
+                                <img class="has-top-bottom" src="<%= apiUrl + events[i].attributes.Image.data.attributes.url %>" alt="">
+                                <div class="item-border"></div>
+                                <div class="item-info">
+                                    <a href="project-7.html" data-dsn-grid="move-up" class="effect-ajax">
 
-                                    <div class="work-item slick-slide">
-                                        <img class="has-top-bottom" src="assets/img/project/project6/1.jpg" alt="">
-                                        <div class="item-border"></div>
-                                        <div class="item-info">
-                                            <a href="project-6.html" data-dsn-grid="move-up" class="effect-ajax">
+                                        <h5 class="cat"><%= events[i].attributes.Name %></h5>
+                                        <span><span>View Project</span></span>
+                                    </a>
 
-                                                <h5 class="cat">Fashion</h5>
-                                                <h4>Bloawshom</h4>
-                                                <span><span>Veiw Project</span></span>
-                                            </a>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="work-item slick-slide">
-                                        <img class="has-top-bottom" src="assets/img/project/project4/1.jpg" alt="">
-                                        <div class="item-border"></div>
-                                        <div class="item-info">
-                                            <a href="project-4.html" data-dsn-grid="move-up" class="effect-ajax">
-
-                                                <h5 class="cat">Photography</h5>
-                                                <h4>Bastian Bux</h4>
-                                                <span><span>Veiw Project</span></span>
-                                            </a>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="work-item slick-slide">
-                                        <img class="has-top-bottom" src="assets/img/project/project5/1.jpg" alt="">
-                                        <div class="item-border"></div>
-                                        <div class="item-info">
-                                            <a href="project-5.html" data-dsn-grid="move-up" class="effect-ajax">
-
-                                                <h5 class="cat">Fashion</h5>
-                                                <h4>Bloawshom</h4>
-                                                <span><span>Veiw Project</span></span>
-                                            </a>
-
-                                        </div>
-                                    </div>
                                 </div>
-
                             </div>
-                        </div>
+                            <% } %>
+
+
+
+
+
+
                     </div>
+
                 </div>
-            </section>
+            </div>
+        </div>
+    </div>
+</section>

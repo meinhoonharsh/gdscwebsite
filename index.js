@@ -26,12 +26,12 @@ getData = async (path) => {
 app.use(express.static(path.join(__dirname, 'public')));
 router.get("/", async (req, res) => {
   
-  const teamsData = await getData(`teams`)
-  const departmentsData = await getData(`departments?populate=icon`)
-  const partnersData = await getData(`communitypartners`)
-  const blogsData = await getData(`blogs`)
-  const eventsData = await getData(`events`)
-  const feedbackData = await getData(`feedbacks`)
+  const teamsData = await getData(`teams?populate=*`)
+  const departmentsData = await getData(`departments?populate=*`)
+  const partnersData = await getData(`communitypartners?populate=*`)
+  const blogsData = await getData(`blogs?populate=*`)
+  const eventsData = await getData(`events?populate=*`)
+  const feedbackData = await getData(`feedbacks?populate=*`)
   
  
   const params = {
@@ -43,8 +43,8 @@ router.get("/", async (req, res) => {
     feedbacks: feedbackData,
     apiUrl: apiUrl
   }
-  res.send(params)
-  // res.render("index", params);
+  // res.send(params)
+  res.render("index", params);
  
 
 
