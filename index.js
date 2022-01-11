@@ -64,7 +64,8 @@ router.get("/blog/:slug", async (req, res) => {
       blog: blog,
       apiUrl: apiUrl
     }
-    res.send(params);
+    // res.send(params);
+    res.render("blog", params);
   }
   else{
     res.send('No blog found for slug: '+ slug)  
