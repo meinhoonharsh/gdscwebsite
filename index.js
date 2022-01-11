@@ -45,17 +45,30 @@ router.get("/", async (req, res) => {
   }
   // res.send(params)
   res.render("index", params);
- 
-
-
 });
 
 router.get("/contact", (req, res) => {
   res.render("contact",{
-    departments: departments,
-    partners: partners,
-    teams: teams
+    apiUrl: apiUrl
   });
+});
+
+// Blogs routes
+router.get("/blog/:slug", async (req, res) => {
+  const slug = req.params.slug;
+  const blogsData = await getData(`blogs?populate=*`)
+  const blog = blogsData.find(blog => blog.attributes.slug === slug);
+  if(blog){
+
+    const params = {
+      blog: blog,
+      apiUrl: apiUrl
+    }
+    res.send(params);
+  }
+  else{
+    res.send('No blog found for slug: '+ slug)  
+  }
 });
 
 router.get("/axios", (req, res) => {
@@ -64,7 +77,6 @@ router.get("/axios", (req, res) => {
   axios.post('http://localhost:1337/api/departments', {
     title: 'New Team',
     description: 'New Team Description',
-    
   }, {
     "headers": {
        'Content-Type': 'application/json',
