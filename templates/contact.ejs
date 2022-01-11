@@ -87,7 +87,7 @@
                                         <div class="form-box">
                                             <h3>Write A Comment</h3>
                                             <form id="contact-form" class="form" method="post"
-                                                action="http://theme.dsngrid.com/droow/contact.php"
+                                                action="javascript:void(0)"
                                                 data-toggle="validator">
                                                 <div class="messages"></div>
                                                 <div class="input__wrap controls">
@@ -190,6 +190,32 @@
             <script src="assets/js/plugins.js"></script>
             <script src="assets/js/dsn-grid.js"></script>
             <script src="assets/js/custom.js"></script>
+
+            <script>
+                $(document).ready(function () {
+                    $('#contact-form').validator();
+                });
+                // Post Request when Form Submit
+                $('#contact-form').on('submit', function (e) {
+                    // Ajax post request on apiUrl + /api/messages
+                    $.post('<%= apiUrl  %>'+ '/api/messages',{
+                        name: $('#form_name').val(),
+                        email: $('#form_email').val(),
+                        message: $('#form_message').val()
+                    },function (data) {
+                        // console.log(data);
+                        if (data.status == 'success') {
+                            $('#contact-form')[0].reset();
+                            $('#contact-form').validator('destroy');
+                            $('#contact-form').validator();
+                            alert('Your message has been sent successfully');
+                        } else {
+                            alert('Something went wrong');
+                        }
+                    });
+                    return false;
+                });
+            </script>
 </body>
 
 
