@@ -72,25 +72,6 @@ router.get("/blog/:slug", async (req, res) => {
   }
 });
 
-router.get("/axios", (req, res) => {
- 
-  // Send post request with axios to /api/departments 
-  axios.post('http://localhost:1337/api/departments', {
-    title: 'New Team',
-    description: 'New Team Description',
-  }, {
-    "headers": {
-       'Content-Type': 'application/json',
-    }})
-  .then(response => {
-    res.send(response.data)
-  })
-  .catch(error => {
-    res.send(error)
-  })
-
-});
-
 router.get("/about", (req, res) => {
   res.render("about", { title: "Hey", message: "Hello there!" });
 });
