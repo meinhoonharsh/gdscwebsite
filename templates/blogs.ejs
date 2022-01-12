@@ -55,10 +55,13 @@
                         <div class="root-blog">
                             <div class="container">
 
+                                <% blogs.forEach((blog) => { %>
+
+                                
                                 <article class="post-list-item">
                                     <figure>
-                                        <a class="image-zoom effect-ajax" href="post.html" data-dsn-animate="up">
-                                            <img src="assets/img/blog/1.jpg" alt="">
+                                        <a class="image-zoom effect-ajax" href="<%= apiUrl + ' /blog/' +blog.attributes.slug %>" data-dsn-animate="up">
+                                            <img src="<%= apiUrl  +blog.attributes.Image.data.attributes.url %>" alt="">
                                         </a>
                                     </figure>
                                     <div class="post-list-item-content">
@@ -72,16 +75,19 @@
                                             </div>
                                         </div>
                                         <h3>
-                                            <a href="#">interview with Communication Arts about Jayasom website</a>
+                                            <a href="<%= apiUrl + ' /blog/' +blog.attributes.slug %>">
+                                                <%= blog.attributes.Title %>
+                                            </a>
                                         </h3>
 
                                         <div class="link-custom" data-dsn-animate="up">
-                                            <a class="image-zoom effect-ajax" href="post.html" data-dsn="parallax">
+                                            <a class="image-zoom effect-ajax" href="<%= apiUrl + ' /blog/' +blog.attributes.slug %>" data-dsn="parallax">
                                                 <span>Read More</span>
                                             </a>
                                         </div>
                                     </div>
                                 </article>
+                                <% }) %>
 
 
 
