@@ -59,7 +59,6 @@ router.get("/blog/:slug", async (req, res) => {
   const blogsData = await getData(`blogs?populate=*`)
   const blog = blogsData.find(blog => blog.attributes.slug === slug);
   if(blog){
-
     const params = {
       blog: blog,
       apiUrl: apiUrl
@@ -71,6 +70,19 @@ router.get("/blog/:slug", async (req, res) => {
     res.send('No blog found for slug: '+ slug)  
   }
 });
+
+//  All Blogs Route
+router.get("/blogs", async (req, res) => {
+  const blogsData = await getData(`blogs?populate=*`)
+  const params = {
+    blogs: blogsData,
+    apiUrl: apiUrl
+  }
+  // res.send(params);
+  res.render("blogs", params);
+});
+
+
 
 router.get("/about", (req, res) => {
   res.render("about", { title: "Hey", message: "Hello there!" });
