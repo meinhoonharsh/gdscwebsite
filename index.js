@@ -7,7 +7,7 @@ const teams = require('./json/teams.json');
 const axios = require('axios')
 const { resolve } = require("path");
 const { param } = require("express/lib/request");
-const apiUrl = 'http://localhost:1337'
+const apiUrl = 'https://gdscuitrgpv-backend.herokuapp.com'
 const router = express.Router();
 app.set('views', path.join(__dirname, 'templates'));
 app.set('view engine', 'ejs');
