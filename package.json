@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
+    "sass:watch":"node-sass --watch public/styles/scss/index.scss public/styles/css/style.css",
+    "sass:compile":"node-sass public/styles/scss/index.scss public/styles/css/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Harsh Vishwakarma",
@@ -20,6 +22,7 @@
     "express-handlebars": "^6.0.2",
     "hbs": "^4.2.0",
     "node-fetch": "^3.1.0",
+    "node-sass": "^7.0.1",
     "nodemon": "^2.0.15",
     "pug": "^3.0.2",
     "swig": "^1.4.2"
