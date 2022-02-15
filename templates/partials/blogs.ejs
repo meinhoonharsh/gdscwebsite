@@ -14,7 +14,7 @@
             <% for(var i = 0; i < blogs.length; i++) {%>
                             <div class="item-new slick-slide">
                                 <div class="image" data-overlay="5">
-                                    <img src="<%= apiUrl + blogs[i].attributes.Image.data.attributes.url %>" alt="">
+                                    <img src="<%= blogs[i].attributes.Image.data.attributes.url %>" alt="">
                                 </div>
                                 <div class="content">
                                     <div class="background"></div>
